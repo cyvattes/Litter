@@ -1,0 +1,10 @@
+<div>
+  <ul>
+  <%@lits.each do |lit|%>
+    <div class="lit">
+      <%user_id = lit.pluck(:user_id)%>
+      <li class="lit_txext"><%= @user.find_by(id: user_id).pluck(user_name)%></li>
+      <li class="lit_txext"><%= lit.pluck(:lit_text)%></li>
+    </div>
+  <%end%>
+</div>

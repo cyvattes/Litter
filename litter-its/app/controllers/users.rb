@@ -1,4 +1,5 @@
 get '/users' do
+  @lits = Lit.all
   @users = User.all
   erb :'users/index'
 end

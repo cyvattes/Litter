@@ -1,1 +1,23 @@
-<h1>Hello World!</h1>
+<section id="body_container">
+  <section id="signup_right">
+    <article>
+      <% .each do |lit| %>
+        <div class="litts_layout">
+        <%= %>
+        </div>
+      <% end %>
+    </article>
+  </section>
+
+  <section id="signup_left">
+    <div id="profile_page_title">
+      <%= @user.first_name @user.last_name %>
+    </div>
+    <div id="profile_page_following">
+
+    </div>
+    <div id="profile_page_followers">
+
+    </div>
+  </section>
+</section>

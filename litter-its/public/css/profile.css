@@ -1,0 +1,40 @@
+/* Profile Page Body Section*/
+#body_container {
+  margin-left:  0 auto;
+  width: 100%;
+}
+
+/* Right Section */
+#signup_right {
+  float: right;
+}
+
+/* Litts Section */
+.litts_layout {
+  float: left;
+  align: center;
+  margin: 0 auto;
+}
+
+/* Left Section */
+#signup_left {
+
+}
+
+#profile_page_title {
+
+}
+
+#profile_page_following {
+
+}
+
+#profile_page_followers {
+
+}
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */

@@ -1,9 +1,9 @@
 <section id="body_container">
   <section id="signup_right">
     <article>
-      <% .each do |lit| %>
+      <% @lits.each do |lit| %>
         <div class="litts_layout">
-        <%= %>
+        <%= lit.lit_text %>
         </div>
       <% end %>
     </article>
@@ -11,7 +11,9 @@
 
   <section id="signup_left">
     <div id="profile_page_title">
-      <%= @user.first_name @user.last_name %>
+    <% @users.each do |user| %>
+      <%= user.full_name %>
+    <% end %>
     </div>
     <div id="profile_page_following">
 

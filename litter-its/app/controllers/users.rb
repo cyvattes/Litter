@@ -29,7 +29,8 @@ end
 
 post '/users/login' do
   #@user = User.create(first_name: params[:first_name], last_name: params[:last_name], user_name: params[:user_name], email: params[:email], password: params[:password])
-  user = User.find_by(email: params[:user][:email])
+  p params
+  user = User.find_by(email: params[:email])
   if user.authenticate(params[:password])
     session[:user_id] = user.id
     session[:name] = user.full_name
@@ -39,14 +40,14 @@ post '/users/login' do
   end
 end
 
-get '/users/:id' do
-  @user = User.find(params[:id])
-  erb :'/users/show'
-end
+# get '/users/:id' do
+#   @user = User.find(params[:id])
+#   erb :'/users/show'
+# end
 
-get '/users/:id/edit' do
-  erb :'/users/edit'
-end
+# get '/users/:id/edit' do
+#   erb :'/users/edit'
+# end
 
 post '/users/logout' do
   session[:user_id] = nil

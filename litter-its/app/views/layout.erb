@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    loads bootstrap
+  -->
+  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+  <!--
+    application.css is where you put your styles
+  -->
+ <!--  <link rel="stylesheet" href="/css/application.css"> -->
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/application.js"></script> -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/profile.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Litter-its</title>
+</head>
+<body id="container">
+  <header id="header">
+    <div id="header_left">
+      <img src="../files/twitter.png"
+    </div>
+    <div id="header_right">
+      <form action="/users/:id" method="post">
+        <div class="header_right_login">
+          <label>Email</label><br>
+          <input type="text" name="user_name">
+        </div>
+        <div class="header_right_login">
+          <label>Password</label><br>
+          <input type="password" name="password">
+        </div>
+        <div class="header_right_login">
+          <input type="submit" value="Login" id="login_button">
+        </div>
+      </form>
+    </div>
+  </header>
+
+
+  <%= yield %>
+
+
+  <footer>
+    <a class="footer_link" href="mailto:#"><i class="fa fa-envelope-square fa-3x"></i></a>
+    <a class="footer_link" href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x"></i></a>
+    <a class="footer_link" href="https://www.linkedin.com/"><i class="fa fa-linkedin-square fa-3x"></i></a>
+    <a class="footer_link" href="https://twitter.com/"><i class="fa fa-twitter-square fa-3x"></i></a>
+    <a class="footer_link" href="https://plus.google.com/"><i class="fa fa-google-plus-square fa-3x"></i></a>
+    <a class="footer_link" href="https://github.com/sharonjean/litter-its"><i class="fa fa-github-square fa-3x"></i></a>
+    <p>Copyright© ReRun 2016</p>
+  </footer>
+</body>
+</html>
+      <!-- <div class="navbar-header">
+        <% if session[:user_id] %>
+          <div class="navbar-brand">
+
+          </div>
+        <% else %>
+          <div class="navbar-brand">
+
+          </div>
+        <% end %>
+      </div>
+      <% if session[:user_id] %>
+        <div class="navbar-right">
+          <p class="navbar-text"><%= "Signed in as #{session[:name]}" %></p>
+          <form id="sign-in" class="navbar-form navbar-right" action="/users/logout" method="POST">
+            <button type="submit" class="btn btn-default">Sign out</button>
+          </form>
+        </div>
+      <% else %>
+        <div id="sign-in" class="navbar-right">
+          <button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#logIn">Sign in</button>
+        </div>
+      <% end %>
+    </div>
+  </nav>
+   -->
